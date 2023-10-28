@@ -1,0 +1,26 @@
+.body-background-img {
+    position: relative;
+  }
+  
+  .body-background-img::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.68); /* Change the opacity as needed */
+    z-index: 1;
+  }
+  
+  .body-background-img {
+    background-image: url('../../assets/images/banner_bg.png');
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+    z-index: 0;
+  }
+
+  .h-calc{
+    height: calc(100vh - 105px);
+}
+  
